@@ -19,3 +19,4 @@ const seachHtml = `
       <ul class="gallery"></ul>
 </div>
 `;
+bodySeach.insertAdjacentHTML('afterbegin', seachHtml);

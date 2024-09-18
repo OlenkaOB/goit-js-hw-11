@@ -1,13 +1,11 @@
 :root {
-  /* font-family:  Arial, sans-serif; */
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0.04em;
   color: #242424;
   background-color: #fff;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,14 +21,14 @@ body {
   margin: 0;
 }
 
-form{
+form {
   display: flex;
   gap: 8px;
   width: 371px;
   margin: 36px auto 32px;
 }
 
-.search-input{
+.search-input {
   border: 1px solid #808080;
   border-radius: 4px;
   width: 272px;
@@ -46,50 +44,53 @@ form{
   border: 1px solid #4e75ff;
 }
 
-button{
+button {
   background: #4e75ff;
   border-radius: 8px;
   padding: 8px 16px;
-  width: 75px;
+  width: 91px;
   height: 40px;
-  padding: 8px 16px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #fff;
 }
 
 button:hover {
-background: #6c8cff;
+  background: #6c8cff;
 }
 
-.galleryEl{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-gap: 24px;
-width: 1128px;
+.galleryEl {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 1128px;
 }
 
-.gallery-list-item{
+.gallery-list-item {
   width: 360px;
   height: 200px;
   border: 1px solid #808080;
 }
 
-.gallery-link{
+.gallery-link {
   display: block;
 }
 
-.img{
+.img {
   height: 158px;
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.data-list{
+.data-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,20 +98,20 @@ width: 1128px;
   margin: 4px 0;
 }
 
-.data-item{
+.data-item {
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 
-.data-item-name{
+.data-item-name {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   color: #2e2f42;
 }
 
-.data-numbers{
+.data-numbers {
   font-size: 12px;
   line-height: 2;
   color: #2e2f42;
