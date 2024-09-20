@@ -76,16 +76,12 @@ button:hover {
   border: 1px solid #808080;
 }
 
-.gallary {
+.gallery {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 24px;
-  box-sizing: border-box;
-  padding: 0 80px;
-}
-
-.gallery-link {
-  display: block;
+  justify-content: center;
 }
 
 .gallery-image {
@@ -103,21 +99,19 @@ button:hover {
   margin: 4px 0;
 }
 
-.data-item {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
 .data-item-name {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
+  letter-spacing: 0.04em;
   color: #2e2f42;
 }
 
 .data-numbers {
+  font-weight: 400;
   font-size: 12px;
   line-height: 2;
+  letter-spacing: 0.04em;
   color: #2e2f42;
+  text-align: center;
 }
