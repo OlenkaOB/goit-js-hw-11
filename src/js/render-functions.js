@@ -43,5 +43,3 @@ export const createGalleryMarkup = photos =>
     </ul>`
     )
     .join('');
-
-showBox.refresh();
