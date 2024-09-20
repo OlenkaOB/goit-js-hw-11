@@ -7,16 +7,16 @@ import{S as u,i}from"./assets/vendor-5ObWk2rO.js";(function(){const a=document.c
           title="${a.tags}"/>
       </a>
         <ul class="data-list">
-          <li class="data-item">
+          <li class="card-text">
             <h2 class="data-item-name" >likes</h2>
             <p class="data-numbers">${a.likes}</p>
           </li>
           <li class="card-text">
-            <h2 class="data-item-name>views</h2>
+            <h2 class="data-item-name">views</h2>
             <p class="data-numbers">${a.views}</p>
           </li>
           <li class="card-text">
-            <h2 class="data-item-name>comments</h2>
+            <h2 class="data-item-name">comments</h2>
             <p class="data-numbers">${a.comments}</p>
           </li>
           <li class="card-text">
@@ -24,6 +24,6 @@ import{S as u,i}from"./assets/vendor-5ObWk2rO.js";(function(){const a=document.c
             <p class="data-numbers">${a.downloads}</p>
           </li>
         </ul>
-      </li>data
+      </li>
     </ul>`).join(""),y=document.querySelector("form.js-search-form"),n=document.querySelector(".gallery");y.addEventListener("submit",h);const g=new u(".galleryEl a",{captions:!0,captionsData:"alt",captionDelay:250,overlayOpacity:.7,className:"lightbox"});function p(){document.getElementById("loader").style.display="block"}function c(){document.getElementById("loader").style.display="none"}function h(s){s.preventDefault(),p();const a=s.currentTarget,{searchValue:{value:r}}=a.elements;if(console.log(r),r===""){i.show({message:"⚠️ Please fill search input",position:"topRight",color:"yellow"}),c();return}const l={key:d,q:r,image_type:"photo",orientation:"horizontal",safesearch:"true"},t=new URLSearchParams(l);console.log(t.toString()),n.innerHTML="",fetch(`${m}api/?${t}`).then(e=>{if(!e.ok)throw new Error(e.status);return e.json()}).then(e=>{if(!e.hits||e.hits.length===0){i.show({title:"❌",message:'"Sorry, there are no images matching your search query. Please try again!"',position:"topRight",color:"red"});return}console.log(e),n.insertAdjacentHTML("beforeend",f(e.hits)),g.refresh()}).catch(e=>console.log(e)).finally(()=>{c()})}
 //# sourceMappingURL=index.js.map
