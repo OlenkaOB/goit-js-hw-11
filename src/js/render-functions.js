@@ -1,9 +1,12 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-const lightbox = new SimpleLightbox('.gallery a', {
+const showBox = new SimpleLightbox('.img-box a', {
+  captions: true,
   captionsData: 'alt',
-  captionDelay: 200,
+  captionDelay: 250,
+  overlayOpacity: 0.7,
+  className: 'lightbox',
 });
 
 export const createGalleryMarkup = photos =>
@@ -41,4 +44,4 @@ export const createGalleryMarkup = photos =>
     )
     .join('');
 
-lightbox.refresh();
+showBox.refresh();
