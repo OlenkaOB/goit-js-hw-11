@@ -22,16 +22,16 @@ export const createGalleryMarkup = photos =>
           title="${photo.tags}"/>
       </a>
         <ul class="data-list">
-          <li class="data-item">
+          <li class="card-text">
             <h2 class="data-item-name" >likes</h2>
             <p class="data-numbers">${photo.likes}</p>
           </li>
           <li class="card-text">
-            <h2 class="data-item-name>views</h2>
+            <h2 class="data-item-name">views</h2>
             <p class="data-numbers">${photo.views}</p>
           </li>
           <li class="card-text">
-            <h2 class="data-item-name>comments</h2>
+            <h2 class="data-item-name">comments</h2>
             <p class="data-numbers">${photo.comments}</p>
           </li>
           <li class="card-text">
@@ -39,7 +39,7 @@ export const createGalleryMarkup = photos =>
             <p class="data-numbers">${photo.downloads}</p>
           </li>
         </ul>
-      </li>data
+      </li>
     </ul>`
     )
     .join('');

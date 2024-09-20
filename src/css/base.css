@@ -1,4 +1,4 @@
-/* :root {
+:root {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -11,7 +11,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-} */
+}
 
 body {
   display: flex;
@@ -71,25 +71,24 @@ button:hover {
 }
 
 .galleryEl {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 24px;
-  width: 1128px;
-}
-
-.gallery-list-item {
-  display: flex;
   width: 360px;
   height: 200px;
   border: 1px solid #808080;
+}
+
+.gallary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  box-sizing: border-box;
+  padding: 0 80px;
 }
 
 .gallery-link {
   display: block;
 }
 
-.img {
+.gallery-image {
   height: 158px;
   width: 100%;
   object-fit: cover;
