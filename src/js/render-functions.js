@@ -1,7 +1,7 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-const showBox = new SimpleLightbox('.img-box a', {
+const showBox = new SimpleLightbox('.galleryEl a', {
   captions: true,
   captionsData: 'alt',
   captionDelay: 250,

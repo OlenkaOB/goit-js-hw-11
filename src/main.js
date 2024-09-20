@@ -10,7 +10,7 @@ const gallery = document.querySelector('.gallery');
 
 form.addEventListener('submit', onButtonSubmit);
 
-const showBox = new SimpleLightbox('.img-box a', {
+const showBox = new SimpleLightbox('.galleryEl a', {
   captions: true,
   captionsData: 'alt',
   captionDelay: 250,
